@@ -18,7 +18,7 @@ export const HeroCard = ({
     characters ,
 }) => {
 
-    const heroImageUrl = `/assets/heroes/${ id }.jpg`;
+    const heroImageUrl = `https://raw.githubusercontent.com/Oen844/react-heroes-yarn/master/assets/heroes/${ id }.jpg`;
 
     // const charactesByHero =  (<p>{ characters }</p>);
 
