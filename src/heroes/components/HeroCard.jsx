@@ -16,9 +16,10 @@ export const HeroCard = ({
     alter_ego,
     first_appearance,
     characters ,
+    url,
 }) => {
-
-    const heroImageUrl = `https://raw.githubusercontent.com/Oen844/react-heroes-yarn/master/assets/heroes/${ id }.jpg`;
+    
+    //const heroImageUrl = {url};
 
     // const charactesByHero =  (<p>{ characters }</p>);
 
@@ -30,7 +31,7 @@ export const HeroCard = ({
                 <div className="row no-gutters">
                     
                     <div className="col-4">
-                        <img src={ heroImageUrl } className="card-img" alt={ superhero } />
+                        <img src={ url } className="card-img" alt={ superhero } />
                     </div>
 
                     <div className="col-8">

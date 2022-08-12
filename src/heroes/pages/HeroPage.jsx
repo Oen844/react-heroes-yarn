@@ -23,7 +23,7 @@ export const HeroPage = () => {
     <div className="row mt-5">
       <div className="col-4">
         <img 
-          src={ `https://raw.githubusercontent.com/Oen844/react-heroes-yarn/master/assets/heroes/${ id }.jpg` } 
+          src={ hero.url } 
           alt={ hero.superhero }
           className="img-thumbnail animate__animated animate__fadeInLeft"
         />
