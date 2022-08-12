@@ -1,0 +1,7 @@
+@media only screen and (max-width: 750px) {
+    .listheroes {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));    
+
+    }
+  }
