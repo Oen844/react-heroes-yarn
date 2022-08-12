@@ -18,7 +18,7 @@ export const Navbar = () => {
     }
 
     return (
-        <nav className="navbar navbar-expand-sm navbar-dark bg-dark p-2">
+        <nav className="navbar navbar-expand-sm navbar-dark bg-dark p-2  " >
             
             <Link 
                 className="navbar-brand" 
@@ -27,25 +27,25 @@ export const Navbar = () => {
                 Asociaciones
             </Link>
 
-            <div className="navbar-collapse">
-                <div className="navbar-nav">
+            <div className="navbar-collapse ">
+                <div className="navbar-nav  d-flex flex-row">
 
                     <NavLink 
-                        className={ ({isActive}) => `nav-item nav-link  ${ isActive ? 'active':'' }` }
+                        className={ ({isActive}) => `nav-item nav-link m-3  ${ isActive ? 'active':'' }` }
                         to="/marvel"
                     >
                         Marvel
                     </NavLink>
 
                     <NavLink 
-                        className={ ({isActive}) => `nav-item nav-link  ${ isActive ? 'active':'' }` }
+                        className={ ({isActive}) => `nav-item nav-link m-3 ${ isActive ? 'active':'' }` }
                         to="/dc"
                     >
                         DC
                     </NavLink>
                     
                     <NavLink 
-                        className={ ({isActive}) => `nav-item nav-link  ${ isActive ? 'active':'' }` }
+                        className={ ({isActive}) => `nav-item nav-link m-3 ${ isActive ? 'active':'' }` }
                         to="/search"
                     >
                         Search
@@ -54,9 +54,9 @@ export const Navbar = () => {
             </div>
 
             <div className="navbar-collapse collapse w-100 order-3 dual-collapse2 d-flex justify-content-end">
-                <ul className="navbar-nav ml-auto">
+                <ul className="navbar-nav ml-auto d-flex flex-row">
                    
-                    <span className="nav-item nav-link text-primary">
+                    <span className="nav-item nav-link text-primary ">
                         { user?.name }
                     </span>
 
